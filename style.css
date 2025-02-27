@@ -1,0 +1,172 @@
+/* スマホサイズのメディアクエリ　*/
+@media screen and (max-width: 480px) {}
+/* タブレットサイズのメディアクエリ　*/
+@media screen and (min-width: 481px) and (max-width: 768px){}
+    
+
+
+/* 全体共通 */
+.ifram {
+    width: 100%;
+}
+body {
+    margin: 0;
+}
+
+/* headar */
+header {
+    max-width: 1404px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 0;
+}
+
+.title {
+    display: flex;
+}
+
+.flow-button {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    margin: 5px 10px;
+}
+
+ul {
+    display: flex;
+    margin: -40px 1150px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    position: relative;
+    font-size: large;
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-right: 35px;
+    transition: 0.5s;
+}
+li a:hover {
+    color: #00f7ff;
+    transition: 0.5s;
+}
+li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #00f7ff;
+    transition: 0.5s;
+}
+li a:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.content {
+    max-width: 1404px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.card-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-list {
+    max-width: 448px;
+}
+
+.btn-list {
+    max-width: 1404px;
+    margin-left: 312px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.btn-block {
+    /*margin-left: 312px;*/
+    max-width: 448px;
+    margin: 10px 0;
+    margin-left: 312px;
+}
+
+.download-btn {
+    font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 0 black;
+}
+
+.download-btn:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.download-btn a {
+    color: black;
+    text-decoration: none;
+}
+
+/* about */
+h2 {
+    max-width: 1404px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    min-height: 600px;
+}
+
+/* 利用規約 */
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    max-width: 1404px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+  
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+  
+details[open] {
+    padding: 0.5em;
+}
+  
+details[open] summary {
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    top: 100vh;
+    position: sticky;
+    background-color: rgb(40, 180, 180);
+}
